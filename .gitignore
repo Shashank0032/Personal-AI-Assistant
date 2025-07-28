@@ -1,0 +1,7 @@
+__pycache__
+myenv
+.env
+client_secret.json
+token_calendar.json
+token_gmail.json
+token_people.json
