@@ -1,0 +1,15 @@
+# -----------------------------------------------------------------------------
+
+# API Keys for Your Agents
+
+# -----------------------------------------------------------------------------
+
+# Replace the placeholder text with your actual API keys.
+
+# Get your Gemini API Key from Google AI Studio
+
+GEMINI_API_KEY="YOUR KEY"
+
+# Get your Tavily API Key from https://tavily.com/
+
+TAVILY_API_KEY="YOUR KEY"
