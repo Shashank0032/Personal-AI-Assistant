@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal AI Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body class="h-full bg-gray-100 flex items-center justify-center">
+    <div id="chat-container"
+        class="w-full max-w-2xl h-[90vh] flex flex-col bg-white shadow-2xl rounded-2xl border border-gray-200">
+        <!-- Header -->
+        <div class="p-4 border-b border-gray-200 text-center">
+            <h1 class="text-xl font-bold text-gray-800">Personal AI Assistant</h1>
+            <p class="text-sm text-gray-500">Your personal assistant for email, calendar, contacts, and more.</p>
+        </div>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="flex-1 p-6 overflow-y-auto space-y-6">
+            <!-- Initial Message -->
+            <div class="message ai-message flex gap-3">
+                <div
+                    class="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center text-white font-bold">
+                    A</div>
+                <div class="bg-gray-200 text-gray-800 p-3 rounded-lg max-w-lg">
+                    <p>Hello! I'm your personal assistant. How can I help you orchestrate a task today?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Form -->
+        <div class="p-4 border-t border-gray-200 bg-gray-50 rounded-b-2xl">
+            <form id="chat-form" class="flex items-center gap-3">
+                <input type="text" id="chat-input"
+                    class="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition"
+                    placeholder="e.g., Send an email to shashank..." autocomplete="off" required>
+                <button type="submit" id="send-button"
+                    class="px-5 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:bg-indigo-300 disabled:cursor-not-allowed transition">
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
